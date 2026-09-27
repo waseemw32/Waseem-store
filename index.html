@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Waseem Store - متجر إلكتروني متعدد الأقسام">
+<title>WASEEM STORE | تسوّق بذكاء</title><link rel="stylesheet" href="style.css">
+</head><body>
+<header class="top">
+ <a class="brand" href="#"><span class="mark">W</span><span>WASEEM <b>STORE</b><small>كل ما تحتاجه في مكان واحد</small></span></a>
+ <div class="search"><input id="search" placeholder="ابحث عن منتج أو قسم..." aria-label="بحث"><button id="searchBtn">بحث</button></div>
+ <button class="cartBtn" id="openCart">🛒 السلة <strong id="cartCount">0</strong></button>
+</header>
+<nav class="nav"><a href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">كل المنتجات</a><a href="#offers">العروض</a></nav>
+<main>
+<section class="hero" id="home"><div><span class="eyebrow">وجهتك الجديدة للتسوّق</span><h1>اختيارات أكثر.<br><em>تسوّق أسهل.</em></h1><p>اكتشف منتجات مختارة للحياة اليومية، التقنية، المنزل، والأناقة.</p><a class="primary" href="#products">اكتشف المنتجات ←</a></div><div class="heroArt"><div class="orb">W</div><div class="float f1">🎧</div><div class="float f2">⌚</div><div class="float f3">📦</div></div></section>
+<section id="categories"><div class="sectionHead"><div><span class="eyebrow">تصفّح حسب احتياجك</span><h2>الأقسام</h2></div></div><div class="categories" id="categoryList"></div></section>
+<section id="offers" class="offer"><div><span>عروض مختارة</span><h2>أشياء تحبها<br>بأسعار تناسبك</h2><p>تصفّح تشكيلتنا واكتشف ما يناسبك.</p></div><div class="offerIcon">✦</div></section>
+<section id="products"><div class="sectionHead"><div><span class="eyebrow">تشكيلة المتجر</span><h2 id="productsTitle">منتجات مميزة</h2></div><select id="sort" aria-label="ترتيب المنتجات"><option value="featured">ترتيب مقترح</option><option value="low">السعر: الأقل أولاً</option><option value="high">السعر: الأعلى أولاً</option></select></div><div class="chips" id="chips"></div><div class="grid" id="productGrid"></div></section>
+</main>
+<footer><div class="brand"><span class="mark">W</span><span>WASEEM <b>STORE</b><small>تسوّق بثقة وبساطة</small></span></div><p>© 2026 Waseem Store — نموذج متجر تجريبي قابل للتطوير.</p><a href="#home">العودة للأعلى ↑</a></footer>
+<div class="overlay" id="overlay"></div><aside class="drawer" id="drawer"><div class="drawerHead"><h2>سلة المشتريات</h2><button id="closeCart" aria-label="إغلاق">✕</button></div><div id="cartItems" class="cartItems"></div><div class="cartFoot"><div class="total"><span>الإجمالي</span><strong id="total">0 ر.س</strong></div><button id="checkout" class="primary full">متابعة الطلب</button><small>الدفع والطلبات الحقيقية غير مفعّلة في هذه النسخة.</small></div></aside>
+<div class="toast" id="toast"></div><script src="script.js"></script></body></html>
